@@ -34,13 +34,13 @@ go build -o tg-ws-proxy main.go
 
 ```bash
 # Для Linux (amd64)
-GOOS=linux GOARCH=amd64 go build -o tg-ws-proxy-linux main.go
+GOOS=linux GOARCH=amd64 go build -o tg-ws-proxy-linux tgws.go
 
 # Для Windows
-GOOS=windows GOARCH=amd64 go build -o tg-ws-proxy.exe main.go
+GOOS=windows GOARCH=amd64 go build -o tg-ws-proxy.exe tgws.go
 
 # Для macOS (Apple Silicon)
-GOOS=darwin GOARCH=arm64 go build -o tg-ws-proxy-mac main.go
+GOOS=darwin GOARCH=arm64 go build -o tg-ws-proxy-mac tgws.go
 
 # Для роутеров (MIPS, ARM и т.д.)
 GOOS=linux GOARCH=mipsle GOMIPS=softfloat go build -o tg-ws-proxy-mipsle main.go
